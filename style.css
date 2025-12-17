@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 8px 10px rgb(23, 225, 182);
+ overflow: hidden;
+}
+
+/* .card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .1;
+    z-index: 10;
+    display: block;
+    position: absolute;
+} */
+
+.ombra {width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ombra:hover {
+    opacity: .1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.save {
+    position: absolute;
+    top: -30px;
+    right: 8px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+text-align: center;
+padding: 5px 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 30px;
+   transition: top 0.5s linear;
+
+}
+
+.card:hover .save {top: 8px;
+    right: 8px;
+
+
+}
+
+
+.bottoni {
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    transition: bottom 0.5s linear;
+    
+}
+
+.bottoni p {
+    display: inline-block;
+    background-color: rgb(255, 255, 255); padding: 5px 0;
+margin-right: 15px;
+margin-left: 13px;
+        border-radius: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.download {
+    width: 30px;
+    height: 15px;
+}
+
+.menu {
+ width: 30px;
+    height: 15px;
+}
+
+.card:hover .bottoni {bottom: 0;
+    left: 0;
+
+}
